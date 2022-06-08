@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+
+#image{
+    width: 70px;
+    margin: auto;
+
+    /** Follow the box-model. Include item + padding + border + margin **/
+}
+
+#new-form{
+    background: #f6f8fa;   
+    padding: 50
+    000px; /*space on  the inside*/
+    border: 1px solid #D8DEE4;
+    border-radius: 5px;
+    margin: 30px; /*space on the outside*/
+    width: 300px;
+    height: 150px;
+}
+
+#submit{
+    background: green;
+    width: 200px;
+}
