@@ -9,21 +9,21 @@
 </head>
 <body>
 
-    <!--4 divs total (1) parent div (2) image div (3) form input div (4) new-to-GitHub div-->
+    <!--5 divs total (1) parent div (2) image div (3) new-form input div (4) new-to-GitHub div (5) sub-footer-->
 
-    <!--parent div-->
+    <!--(1) parent div with an included automatic rounded class-->
 
-<div id="parent">
+<div id="parent" class="rounded">
 
 
-    <!-- header with image div -->
+    <!-- (2) header with image div -->
 <div id="image">
     <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub-logo" id="GitHub-logo">
-    <h1>Sign in to GitHub</h1>
+    <h2>Sign in to GitHub</h2>
 </div id="image">
     <!-- // END header with div image -->
 
-    <!-- form input div-->
+    <!-- (3) new-form input div-->
     <div>
         <form id="new-form">
             <label for="username">Username or Email address</label>
@@ -31,7 +31,7 @@
             <p>
                 <a href="forgot-password.html">Forgot password</a>
             </p>
-            <input type="text" name="username" id="username">
+            <input type="text" name="username" id="username" class="rounded">
 
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
@@ -41,6 +41,18 @@
     </div id="new-form">
     <!-- // END form input div-->
 
+    <!--// (4) new-to-GitHub div-->
+    <div class="rounded" id="sub-footer">
+        <p>New to GitHub? <a href="#"> Create an account.</p>
+    </div>    
+
+    <!-- (5) sub-footer -->
+    <div id="sub-footer">
+        <p><a href="terms.html">Terms</a></p>
+        <p><a href="privacy.html">Privacy</a></p>
+        <p><a href="Security.html">Security</a></p>
+        <p>Contact GitHub</p>
+    </div>
     
 </div id="parent">
 </body>
