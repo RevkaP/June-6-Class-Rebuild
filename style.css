@@ -13,15 +13,20 @@ body {
     background: #f6f8fa;   
     padding: 16px; /*space on  the inside*/
     border: 1px solid #D8DEE4;
-    /*border-radius: 5px;*/
+    border-radius: 5px;
     margin: 30px; /*space on the outside*/
     width: 300px;
     height: 150px;
 }
 
+#password-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 #submit{
     background: green;
-    /*border-radius: 5px;*/
+    border-radius: 5px;
     width: 200px;
 }
 
@@ -31,8 +36,10 @@ body {
     background: #ffff;
 }
 
-/**making a class to have all fill ins to automatically become rounded*/
+
+
+/**making a class to have all fill ins to automatically become rounded
 .rounded{
     border-radius: 5px;
-    border: 1px solid #d8dee4;
+    border: 1px solid #d8dee4;*/
 }

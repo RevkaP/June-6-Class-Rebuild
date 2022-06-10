@@ -9,11 +9,12 @@
 </head>
 <body>
 
-    <!--5 divs total (1) parent div (2) image div (3) new-form input div (4) new-to-GitHub div (5) sub-footer-->
+    <!--5 main divs (1) parent div (2) image div (3) new-form input div (4) new-to-GitHub div (5) sub-footer.
+    A div with flex was also introduced for the password content-->
 
-    <!--(1) parent div with an included automatic rounded class-->
+    <!--(1) parent div with an included automatic rounded class (IGNORE, this was ultimately removed)-->
 
-<div id="parent" class="rounded">
+<div id="parent">
 
 
     <!-- (2) header with image div -->
@@ -28,12 +29,19 @@
         <form id="new-form">
             <label for="username">Username or Email address</label>
 
-            <p>
-                <a href="forgot-password.html">Forgot password</a>
-            </p>
-            <input type="text" name="username" id="username" class="rounded">
+            <input type="text" name="username" id="username">
 
-            <label for="password">Password</label>
+    <!-- flex div -->
+            <div id="password-container" > 
+                <div id="left">
+                    <label for="password">Password</label>
+                </div>
+            
+                <p>
+                    <a href="forgot-password.html">Forgot password</a>
+                </p>
+            </div>
+            
             <input type="password" name="password" id="password">
 
             <input type="submit" value="Sign In" id="submit">
@@ -42,11 +50,11 @@
     <!-- // END form input div-->
 
     <!--// (4) new-to-GitHub div-->
-    <div class="rounded" id="sub-footer">
+    <div id="sub-footer">
         <p>New to GitHub? <a href="#"> Create an account.</p>
     </div>    
 
-    <!-- (5) sub-footer -->
+    <!-- (5) sub-footer with a div flex-->
     <div id="sub-footer">
         <p><a href="terms.html">Terms</a></p>
         <p><a href="privacy.html">Privacy</a></p>
