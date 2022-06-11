@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub LogIn</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GitHub LogIn</title>
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!--5 main divs (1) parent div (2) image div (3) new-form input div (4) new-to-GitHub div (5) sub-footer.
+	<!--5 main divs (1) parent div (2) image div (3) new-form input div (4) new-to-GitHub div (5) sub-footer.
     A div with flex was also introduced for the password content-->
 
-    <!--(1) parent div with an included automatic rounded class (IGNORE, this was ultimately removed)-->
+	<!--(1) parent div with an included automatic rounded class (IGNORE, this was ultimately removed)-->
 
-<div id="parent">
+	<div id="parent">
 
 
-    <!-- (2) header with image div -->
-<div id="image">
-    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub-logo" id="GitHub-logo">
-    <h2>Sign in to GitHub</h2>
-</div id="image">
-    <!-- // END header with div image -->
+		<!-- (2) header with image div -->
+		<div id="header">
+			<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub-logo" id="GitHub-logo">
+			<h2>Sign in to GitHub</h2>
+		</div id>
+		<!-- // END header with div image -->
 
-    <!-- (3) new-form input div-->
-    <div>
-        <form id="new-form">
-            <label for="username">Username or Email address</label>
+		<!-- (3) new-form input div-->
+		<div>
+			<form id="new-form">
+				<label for="username">Username or Email address</label>
 
-            <input type="text" name="username" id="username">
+				<input type="text" name="username" id="username">
 
-    <!-- flex div -->
-            <div id="password-container" > 
-                <div id="left">
-                    <label for="password">Password</label>
-                </div>
-            
-                <p>
-                    <a href="forgot-password.html">Forgot password</a>
-                </p>
-            </div>
-            
-            <input type="password" name="password" id="password">
+				<!-- flex div -->
+				<div id="password-container">
+					<div id="left">
+						<label for="password">Password</label>
+					</div>
 
-            <input type="submit" value="Sign In" id="submit">
+					<p>
+						<a href="forgot-password.html">Forgot password</a>
+					</p>
+				</div>
+
+				<input type="password" name="password" id="password">
+
+				<input type="submit" value="Sign In" id="submit">
         </form>
-    </div id="new-form">
-    <!-- // END form input div-->
+		</div id="new-form">
+		<!-- // END form input div-->
 
-    <!--// (4) new-to-GitHub div-->
-    <div id="sub-footer">
-        <p>New to GitHub? <a href="#"> Create an account.</p>
-    </div>    
+		<!--// (4) new-to-GitHub div-->
+		<div id="sub-footer">
+			<p>New to GitHub? <a href="#"> Create an account.</p>
+		</div>
 
-    <!-- (5) sub-footer with a div flex-->
-    <div id="sub-footer">
-        <p><a href="terms.html">Terms</a></p>
-        <p><a href="privacy.html">Privacy</a></p>
-        <p><a href="Security.html">Security</a></p>
-        <p>Contact GitHub</p>
-    </div>
-    
-</div id="parent">
+		<!-- (5) sub-footer with a div flex-->
+		<div id="sub-footer">
+			<p><a href="terms.html">Terms</a></p>
+			<p><a href="privacy.html">Privacy</a></p>
+			<p><a href="Security.html">Security</a></p>
+			<p>Contact GitHub</p>
+		</div>
+
+	</div id="parent">
 </body>
+
 </html>
